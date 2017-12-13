@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Texas A&M University</title>
+	<style>
+	* {
+	box-sizing: border-box;
+	padding: auto;
+	margin: auto;
+	font-family: cambria;
+	}
+	 
+	
+	
+	form {
+	 width: 420px;
+	 height: auto;
+	 padding: 20px;
+	 margin: 20px auto 0;
+	 border-bottom: 10px white solid;
+	 border-radius: 5px;
+	 }
+	 
+	 option:hover {
+	 color: orange;
+	 font-size: 18px;
+	 }
+	 
+	
+	 select {
+	 padding: 5px;
+	 font-size: 16px;
+	 color: green;
+	 }
+	 input, select {
+	 width: 100%;
+	 
+	 }
+	input, label {
+	font-size: 16px;
+	}
+	 
+	 input {
+	 display: inline-block;
+	 padding:  15px 10px;
+	 border-radius: 5px;
+	 box-shadow: none;
+	 margin-bottom: 5px;
+	 }
+	 
+	 button {
+	 width: 100%;
+	 padding: 10px;
+	 font-size: 16px;
+	 border-radius: 5px;
+	 box-shadow: none;
+	 background-color: #2ECC71;
+	 color: #fff;
+	 margin-top:15px;
+	 
+	 }
+	 
+	 button:hover {
+	 background-color: #58D68D;
+	 }
+	 
+	 h3 {
+	 font-size: 1.5em;
+	 font-weight: normal;
+	 font-family: cambria;
+	 color: rgba(255, 255, 255 .8);
+	 padding: 10px;
+	 }
+	</style>
+	</head>
+<body>
+
+<form method="POST">
+
+	<h3> Students Signup </h3>
+	<!-- User Signup information Begins -->
+	<label for="username">Username: </label>
+	<input type="text" id="username" name="user_name" placeholder="Pick a Username"/><br>
+	
+	<label for="email">Email: </label>
+	<input type="email" id="email" name="user_email" required  placeholder="email@example.com"/><br>
+	
+	<label for="password">Password: </label>
+	<input type="password" id="password" name="user_password" required  placeholder="Create a Password"/><br>
+	<input type="checkbox" /><label>Show Password</label>
+	<!-- /User Signup informations ends -->
+	
+	<!-- Bio informations Begins -->
+	
+	<label>Bio:</label><br>
+	<select>
+		<optgroup label="UNDERGRADUATE">
+			<option value="diploma"> Diploma</option>
+		<option value="bsc">Barchelor of Science BSc</option>
+		</optgroup>
+	
+		<optgroup label="MASTERS">
+			<option value="msc"> Master of Science MSc</option>
+			<option value="mba"> Master of Business Administration</option>
+		</optgroup>
+	
+		<optgroup label="PHD">
+			<option value="phd"> PhD </option>
+		</optgroup>
+		
+	</select> <br>
+	<button type="submit">Sign-up</button>
+	
+	<!-- Bio informations Begins -->
+	
+	
+</form>
+</body>	
+</html>
